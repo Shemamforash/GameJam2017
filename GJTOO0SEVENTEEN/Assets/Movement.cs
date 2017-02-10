@@ -7,18 +7,16 @@ public class Movement : MonoBehaviour {
 	enum GoatMoveState {normal, bashing, returning};
 	private int goatState = (int)GoatMoveState.normal;
 
-	private float goatSpeed = 5f;
-	private float goatInitalX = -8f;
+	private const float goatSpeed = 5f;
+	private const float goatInitalX = -8f;
 	private float goatXVelocity = 0;
 	private float goatBashPowerupValue = 0f; // [0, 1]
-	private float goatMaxBashPowerAmountInSeconds = 4f;
 
-	private bool goatIsReturning = false;
-	private bool goatIsBashing = false;
+	private const float goatMaxBashPowerAmountInSeconds = 4f;
 
-	private string moveUpKey = "w";
-	private string moveDownKey = "s";
-	private string bashKey = "space";
+	private const string moveUpKey = "w";
+	private const string moveDownKey = "s";
+	private const string bashKey = "space";
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +25,7 @@ public class Movement : MonoBehaviour {
 	}
 
 	void Update () {
+
 		Vector3 deltaPosition = new Vector3();
 		switch (goatState) {
 			case (int)GoatMoveState.normal: {

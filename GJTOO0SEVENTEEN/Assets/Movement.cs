@@ -24,8 +24,12 @@ public class Movement : MonoBehaviour {
 		transform.localPosition = new Vector3(goatInitalX, 0, 0);
 	}
 
-	void Update () {
+    void OnCollisionEnter2D(Collision2D coll) {
+        // if (coll.gameObject.tag == "Enemy")
+		coll.gameObject.SendMessage("HandleCollisionWithGoat");
+    }
 
+	void Update () {
 		Vector3 deltaPosition = new Vector3();
 		switch (goatState) {
 			case (int)GoatMoveState.normal: {

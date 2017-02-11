@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: 957a673fb2bb61644bcec4c451741644
+timeCreated: 1486823850
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Balgor Sprite Sheet_0
+    21300002: Balgor Sprite Sheet_1
+    21300004: Balgor Sprite Sheet_2
+    21300006: Balgor Sprite Sheet_3
+    21300008: Balgor Sprite Sheet_4
+    21300010: Balgor Sprite Sheet_5
+    21300012: Balgor Sprite Sheet_6
+    21300014: Balgor Sprite Sheet_7
+    21300016: Balgor Sprite Sheet_8
+    21300018: Balgor Sprite Sheet_9
+    21300020: Balgor Sprite Sheet_10
+    21300022: Balgor Sprite Sheet_11
+    21300024: Balgor Sprite Sheet_12
+    21300026: Balgor Sprite Sheet_13
+    21300028: Balgor Sprite Sheet_14
+    21300030: Balgor Sprite Sheet_15
+    21300032: Balgor Sprite Sheet_16
+    21300034: Balgor Sprite Sheet_17
+    21300036: Balgor Sprite Sheet_18
+    21300038: Balgor Sprite Sheet_19
+    21300040: Balgor Sprite Sheet_20
+    21300042: Balgor Sprite Sheet_21
+    21300044: Balgor Sprite Sheet_22
+    21300046: Balgor Sprite Sheet_23
+    21300048: Balgor Sprite Sheet_24
+    21300050: Balgor Sprite Sheet_25
+    21300052: Balgor Sprite Sheet_26
+    21300054: Balgor Sprite Sheet_27
+    21300056: Balgor Sprite Sheet_28
+    21300058: Balgor Sprite Sheet_29
+    21300060: Balgor Sprite Sheet_30
+    21300062: Balgor Sprite Sheet_31
+    21300064: Balgor Sprite Sheet_32
+    21300066: Balgor Sprite Sheet_33
+    21300068: Balgor Sprite Sheet_34
+    21300070: Balgor Sprite Sheet_35
+    21300072: Balgor Sprite Sheet_36
+    21300074: Balgor Sprite Sheet_37
+    21300076: Balgor Sprite Sheet_38
+    21300078: Balgor Sprite Sheet_39
+    21300080: Balgor Sprite Sheet_40
+    21300082: Balgor Sprite Sheet_41
+    21300084: Balgor Sprite Sheet_42
+    21300086: Balgor Sprite Sheet_43
+    21300088: Balgor Sprite Sheet_44
+    21300090: Balgor Sprite Sheet_45
+    21300092: Balgor Sprite Sheet_46
+    21300094: Balgor Sprite Sheet_47
+    21300096: Balgor Sprite Sheet_48
+    21300098: Balgor Sprite Sheet_49
+    21300100: Balgor Sprite Sheet_50
+    21300102: Balgor Sprite Sheet_51
+    21300104: Balgor Sprite Sheet_52
+    21300106: Balgor Sprite Sheet_53
+    21300108: Balgor Sprite Sheet_54
+    21300110: Balgor Sprite Sheet_55
+    21300112: Balgor Sprite Sheet_56
+    21300114: Balgor Sprite Sheet_57
+    21300116: Balgor Sprite Sheet_58
+    21300118: Balgor Sprite Sheet_59
+    21300120: Balgor Sprite Sheet_60
+    21300122: Balgor Sprite Sheet_61
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1481
+        width: 278
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1481
+        width: 276
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1482
+        width: 274
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1482
+        width: 272
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1482
+        width: 270
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1482
+        width: 268
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1481
+        width: 267
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1297
+        width: 265
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1296
+        width: 263
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1296
+        width: 261
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1296
+        width: 259
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1295
+        width: 258
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1295
+        width: 256
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1294
+        width: 254
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1110
+        width: 253
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1110
+        width: 251
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1109
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1109
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1109
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 1109
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 1108
+        width: 249
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 924
+        width: 249
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 924
+        width: 251
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 924
+        width: 252
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 925
+        width: 254
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 924
+        width: 255
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 925
+        width: 257
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 925
+        width: 259
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 741
+        width: 260
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 742
+        width: 262
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 742
+        width: 264
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 743
+        width: 265
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 743
+        width: 265
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 742
+        width: 263
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 742
+        width: 261
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 557
+        width: 260
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 557
+        width: 258
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 557
+        width: 256
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 557
+        width: 254
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 556
+        width: 253
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 556
+        width: 251
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 556
+        width: 250
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 249
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 372
+        width: 249
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 373
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 373
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 373
+        width: 249
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 373
+        width: 250
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 374
+        width: 252
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 254
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 191
+        width: 255
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 191
+        width: 257
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 191
+        width: 259
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 192
+        width: 260
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 192
+        width: 262
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 193
+        width: 264
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 266
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 10
+        width: 267
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 10
+        width: 269
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 10
+        width: 271
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 10
+        width: 273
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Balgor Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 10
+        width: 275
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

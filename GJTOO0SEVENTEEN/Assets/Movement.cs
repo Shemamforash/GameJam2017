@@ -38,6 +38,7 @@ public class Movement : MonoBehaviour {
 	}
 
     void OnCollisionEnter2D(Collision2D coll) {
+    	// TODO: somethings wrong... the collision isnt happening when it should
     	if (goatState == (int)GoatMoveState.bashing) {
 	    	goatState = (int)GoatMoveState.returning;
 			coll.gameObject.SendMessage("HandleCollisionWithGoat");    		

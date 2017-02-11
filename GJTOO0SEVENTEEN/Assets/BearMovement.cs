@@ -9,16 +9,25 @@ public class BearMovement : MonoBehaviour {
 	private float bearXVelocity = 5f;
 	private bool bearHasBeenHit = false;
 
+	private bool enteredMapForFirstTime = false;
+	private bool bearGotPastGoat = false;
+
+    private Rigidbody2D rb;
+
 	private const float timeBearDisappearsInSecs = 0.08f;
 	private float bearHitTimer = 0f;
 
 	void Start () {
+		rb = gameObject.GetComponent<Rigidbody2D>();
 		gameObject.tag = "Bear";
+
 	}
 	
     void OnCollisionEnter2D(Collision2D coll) {
     	if (coll.gameObject.tag == "Bear") {
-			BearHasBeenHit();
+    		// this should only happen when there has first been a collision with the goat otherwise
+    		// the bears can kill each other by just walking around by themselves
+			// BearHasBeenHit();
     	}
     }
 
@@ -39,20 +48,31 @@ public class BearMovement : MonoBehaviour {
 		}
 		transform.position += deltaPosition;
 
-		const float screenLeft = -20f; // TODO: it there a way to get this properly?
-		const float screenWidth = 26f; // TODO: it there a way to get this properly?
+		float screenLeft = GameInfo.MetresToWorldX(0);
+		float screenRight = GameInfo.GetWorldRight(); 
+		float screenWidth = GameInfo.GetWorldWidth(); // TODO: it there a way to get this properly?
 
-		if (transform.position.x < screenLeft) {
+		if (transform.position.x < screenRight) {
+			enteredMapForFirstTime = true;
+		} else if (enteredMapForFirstTime && !bearHasBeenHit) {
+			// the bear has been flown off the map somehow
+			enteredMapForFirstTime = false;
+			print("Bear killed by flying off the map");
+			GameInfo.IncBearsKilled();
+		}
+
+		if (!bearGotPastGoat && transform.position.x < screenLeft) {
 			// the bear has gotten past the goat!
-			if (GameInfo.IncBearGotPast()) {
-				SceneManager.LoadScene("Level Up Scene");
-			}
+			bearGotPastGoat = true;
+			print("Bear got past!!");
+			GameInfo.IncBearGotPast();
 		}
 	}
 
 	void BearHasBeenHit() {
 		bearHasBeenHit = true;
-		++GameInfo.bearsKilled;
+		print("Bear killed!!");
+		GameInfo.IncBearsKilled();
 	}
 
 	void HandleCollisionWithGoat() {

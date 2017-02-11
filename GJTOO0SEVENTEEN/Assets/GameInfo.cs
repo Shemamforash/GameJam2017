@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public static class GameInfo {
+
+	//
+	// Metres to world coords
+	//
 
 	public static float screenWidthInMetres = 8f;
 	public static float screenHeightInMetres = ((float)Screen.height / (float)Screen.width) * screenWidthInMetres;
@@ -35,28 +37,49 @@ public static class GameInfo {
 	}
 
 
-	public static int levelNum = 0;
-	public static int numBearsToIncPerLevel = 0;
+	//
+	// Game state
+	//
 
-	public static int bearsKilled = 0;
-
-	public const int numLevels = 5;
+	private static int levelNum = 0;
+	private static int bearsKilled = 0;
 	private static int bearsGotPast = 0;
+	public static int numBearsStillOnLevel = 0;
 
 	public static int GetNumBears() {
-		return 10 + levelNum * numBearsToIncPerLevel;
+		const int numBearsToIncPerLevel = 5;
+		int result = 5 + levelNum * numBearsToIncPerLevel;
+		numBearsStillOnLevel = result;
+		return result;
 	}
 
 	public static void ResetGame() {
 		levelNum = 0;		
 		bearsGotPast = 0;
+		bearsKilled = 0;
 	}
 
-	public static bool IncBearGotPast() {
+	public static void IncBearsKilled() {
+		bearsKilled++;
+		numBearsStillOnLevel--;
+		CheckIfGameIsOver();		
+	}
+
+	public static void IncBearGotPast() {
 		bearsGotPast++;
+		numBearsStillOnLevel--;
 		if (bearsGotPast > 6) {
-			return true;
+			Debug.Log("GAME OVER");
+			// GAME OVER
+			// you let too many bears past you muppet
 		}
-		return false;
+		CheckIfGameIsOver();
+	}
+
+	public static void CheckIfGameIsOver() {
+		if (numBearsStillOnLevel <= 0) {
+			Debug.Log("NEW LEVEL");			
+			// Level is over - start the next level
+		}
 	}
 }

@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: e7f1e4333d20b7b419f1f84ba1577414
+timeCreated: 1486808806
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Angry Goat Spritesheet_0
+    21300002: Angry Goat Spritesheet_1
+    21300004: Angry Goat Spritesheet_2
+    21300006: Angry Goat Spritesheet_3
+    21300008: Angry Goat Spritesheet_4
+    21300010: Angry Goat Spritesheet_5
+    21300012: Angry Goat Spritesheet_6
+    21300014: Angry Goat Spritesheet_7
+    21300016: Angry Goat Spritesheet_8
+    21300018: Angry Goat Spritesheet_9
+    21300020: Angry Goat Spritesheet_10
+    21300022: Angry Goat Spritesheet_11
+    21300024: Angry Goat Spritesheet_12
+    21300026: Angry Goat Spritesheet_13
+    21300028: Angry Goat Spritesheet_14
+    21300030: Angry Goat Spritesheet_15
+    21300032: Angry Goat Spritesheet_16
+    21300034: Angry Goat Spritesheet_17
+    21300036: Angry Goat Spritesheet_18
+    21300038: Angry Goat Spritesheet_19
+    21300040: Angry Goat Spritesheet_20
+    21300042: Angry Goat Spritesheet_21
+    21300044: Angry Goat Spritesheet_22
+    21300046: Angry Goat Spritesheet_23
+    21300048: Angry Goat Spritesheet_24
+    21300050: Angry Goat Spritesheet_25
+    21300052: Angry Goat Spritesheet_26
+    21300054: Angry Goat Spritesheet_27
+    21300056: Angry Goat Spritesheet_28
+    21300058: Angry Goat Spritesheet_29
+    21300060: Angry Goat Spritesheet_30
+    21300062: Angry Goat Spritesheet_31
+    21300064: Angry Goat Spritesheet_32
+    21300066: Angry Goat Spritesheet_33
+    21300068: Angry Goat Spritesheet_34
+    21300070: Angry Goat Spritesheet_35
+    21300072: Angry Goat Spritesheet_36
+    21300074: Angry Goat Spritesheet_37
+    21300076: Angry Goat Spritesheet_38
+    21300078: Angry Goat Spritesheet_39
+    21300080: Angry Goat Spritesheet_40
+    21300082: Angry Goat Spritesheet_41
+    21300084: Angry Goat Spritesheet_42
+    21300086: Angry Goat Spritesheet_43
+    21300088: Angry Goat Spritesheet_44
+    21300090: Angry Goat Spritesheet_45
+    21300092: Angry Goat Spritesheet_46
+    21300094: Angry Goat Spritesheet_47
+    21300096: Angry Goat Spritesheet_48
+    21300098: Angry Goat Spritesheet_49
+    21300100: Angry Goat Spritesheet_50
+    21300102: Angry Goat Spritesheet_51
+    21300104: Angry Goat Spritesheet_52
+    21300106: Angry Goat Spritesheet_53
+    21300108: Angry Goat Spritesheet_54
+    21300110: Angry Goat Spritesheet_55
+    21300112: Angry Goat Spritesheet_56
+    21300114: Angry Goat Spritesheet_57
+    21300116: Angry Goat Spritesheet_58
+    21300118: Angry Goat Spritesheet_59
+    21300120: Angry Goat Spritesheet_60
+    21300122: Angry Goat Spritesheet_61
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1561
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1366
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1171
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 976
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 781
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 585
+        width: 304
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 586
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 391
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 196
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Angry Goat Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1
+        width: 304
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

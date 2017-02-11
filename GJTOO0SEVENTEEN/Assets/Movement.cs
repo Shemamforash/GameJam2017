@@ -6,11 +6,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
 	public Image bashPowerupBar;
+	public Text levelText;
+	public Text bearsText;
 
 	enum GoatMoveState {normal, bashing, returning};
 	private int goatState = (int)GoatMoveState.normal;
 
-	private const float goatSpeed = 5f;
+	private const float goatSpeed = 8f;
 	private const float goatInitalX = -8f; // TODO: just arbitrarily chosen, is there a more robust way?
 	private const float goatMaxBashPowerAmountInSeconds = 1f;
 
@@ -53,14 +55,11 @@ public class Movement : MonoBehaviour {
 				// regular up and down movement
 				//
 
-				bool movedVertically = false;
 				if (Input.GetKey(moveUpKey)) {
 					deltaPosition.y += goatSpeed * Time.deltaTime;
-					movedVertically = true;
 				} 
 				if (Input.GetKey(moveDownKey)) {
 					deltaPosition.y -= goatSpeed * Time.deltaTime;
-					movedVertically = true;
 				}			
 
 				// 
@@ -94,7 +93,7 @@ public class Movement : MonoBehaviour {
 				if (transform.position.x < (goatInitalX + distanceOfThisBash)) {
 					goatXVelocity *= 1.5f; // acceleration
 					if (goatXVelocity > 100f) {
-						goatXVelocity = 100f;	
+						goatXVelocity = 100f;
 					}
 					deltaPosition.x = goatXVelocity * Time.deltaTime;
 				} else {
@@ -123,6 +122,8 @@ public class Movement : MonoBehaviour {
 		rb.velocity = velo;
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
+
+		levelText.text = "Levelll";
 
 	}
 

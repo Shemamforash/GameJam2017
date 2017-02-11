@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // 
 
 public static class GameInfo {
 
@@ -42,7 +43,9 @@ public static class GameInfo {
 	//
 
 	private static int levelNum = 0;
-	private static int bearsKilled = 0;
+	private static int totalBearsKilled = 0;
+	private static int bearPoints = 0;
+	private static int totalBearsGotPast = 0;
 	private static int bearsGotPast = 0;
 	public static int numBearsStillOnLevel = 0;
 
@@ -53,34 +56,72 @@ public static class GameInfo {
 		return result;
 	}
 
+	public static void NextLevel(){
+		bearsGotPast = 0;
+		++levelNum;
+		SceneManager.LoadScene("Game");
+	}
+
 	public static void ResetGame() {
 		levelNum = 0;		
 		bearsGotPast = 0;
-		bearsKilled = 0;
+		bearPoints = 0;
+		totalBearsKilled = 0;
 		numBearsStillOnLevel = 0;
+		totalBearsGotPast = 0;
 	}
 
 	public static void IncBearsKilled() {
-		bearsKilled++;
+		++bearPoints;
+		totalBearsKilled++;
 		numBearsStillOnLevel--;
 		CheckIfGameIsOver();		
 	}
 
 	public static void IncBearGotPast() {
 		bearsGotPast++;
+		totalBearsGotPast++;
 		numBearsStillOnLevel--;
 		if (bearsGotPast > 6) {
-			Debug.Log("GAME OVER");
-			// GAME OVER
-			// you let too many bears past you muppet
+			SceneManager.LoadScene("Game Over");
 		}
 		CheckIfGameIsOver();
 	}
 
 	public static void CheckIfGameIsOver() {
 		if (numBearsStillOnLevel <= 0) {
-			Debug.Log("NEW LEVEL");			
-			// Level is over - start the next level
+			SceneManager.LoadScene("Level Up");
 		}
+	}
+
+	private static float chargeModifier = 1;
+	private static float walkSpeedModifier = 1;
+	private static float chargeModifierIncrement = 0.95f;
+	private static float walkModifierIncrement = 1.05f;
+
+	public static void UpgradeCharge(){
+		if(bearPoints > 0){
+			chargeModifier *= chargeModifierIncrement;
+			--bearPoints;
+		}
+	}
+
+	public static void UpgradeWalkSpeed() {
+		if(bearPoints > 0){
+			walkSpeedModifier *= walkModifierIncrement;
+			--bearPoints;
+		}
+	}
+
+	public static int GetBearPoints() {
+		return bearPoints;
+	}
+
+	public static float GetWalkSpeedModifier(){
+		return walkSpeedModifier;
+	}
+
+	public static float GetChargeModifier(){
+		return chargeModifier;
 	}
 }

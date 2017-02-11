@@ -13,10 +13,11 @@ public class Movement : MonoBehaviour {
 	private int goatState = (int)GoatMoveState.normal;
 
 	private const float goatSpeed = 8f;
+	private float goatWalkSpeed;
 	private float goatInitialXMetres = 1f;
 	private float goatInitialXWorld; 
 
-	private const float goatMaxBashPowerAmountInSeconds = 1f;
+	private float goatMaxBashPowerAmountInSeconds = 5f;
 
 	private const string moveUpKey = "w";
 	private const string moveDownKey = "s";
@@ -27,22 +28,23 @@ public class Movement : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-    void FixedUpdate() {
-    }
-
 	// Use this for initialization
 	void Start () {
+		goatWalkSpeed = goatSpeed * GameInfo.GetWalkSpeedModifier();
+		goatMaxBashPowerAmountInSeconds *= GameInfo.GetChargeModifier();
 		goatInitialXWorld = GameInfo.MetresToWorldX(goatInitialXMetres);
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		transform.localPosition = new Vector3(goatInitialXWorld, 0, 0);
 	}
 
-    void OnCollisionEnter2D(Collision2D coll) {
+    void OnTriggerEnter2D(Collider2D coll) {
     	GameObject obj = coll.gameObject;
     	if (goatState == (int)GoatMoveState.bashing &&
-    	    obj.transform.position.x > transform.position.x) {
+    	    obj.transform.position.x >= transform.position.x) {
 	    	goatState = (int)GoatMoveState.returning;
-			obj.SendMessage("HandleCollisionWithGoat");    		
+			BearMovement bm = obj.GetComponent<BearMovement>();
+			bm.BearHasBeenHit();
+			// obj.SendMessage("HandleCollisionWithGoat");    		
     	}
     }
 
@@ -66,20 +68,13 @@ public class Movement : MonoBehaviour {
 				// handle if the bash key is used
 				//
 
-				if (Input.GetKeyDown(bashKey)) {
-					// key initially pressed down
-					goatBashPowerupValue = 0;
+				if (goatBashPowerupValue < 1) {
+					goatBashPowerupValue += Time.deltaTime / goatMaxBashPowerAmountInSeconds;
+				} else {
+					goatBashPowerupValue = 1;
+				}
 
-				} else if (Input.GetKey(bashKey)) {
-					// key held down
-
-					float amountToIncrementPowerup = 1 * (goatMaxBashPowerAmountInSeconds * Time.deltaTime);
-					goatBashPowerupValue += amountToIncrementPowerup;
-					if (goatBashPowerupValue > 1) {
-						goatBashPowerupValue = 1;
-					}
-
-				} else if (Input.GetKeyUp(bashKey)) {
+				if (Input.GetKeyUp(bashKey)) {
 					// key released
 					goatXVelocity = goatSpeed; // set an inital velocity for the bash
 					goatState = (int)GoatMoveState.bashing;
@@ -103,12 +98,12 @@ public class Movement : MonoBehaviour {
 			}
 			case (int)GoatMoveState.returning: {
 				if (transform.position.x > goatInitialXWorld) {
-					if (goatBashPowerupValue > 0f) {
-						goatBashPowerupValue -= 1f * Time.deltaTime;						
-					} else {
+					// if (goatBashPowerupValue > 0f) {
+						// goatBashPowerupValue -= 1f * Time.deltaTime;						
+					// } else {
 						goatBashPowerupValue = 0f;
-					}
-					deltaPosition.x -= (goatSpeed) * Time.deltaTime; // speed at which it returns
+					// }
+					deltaPosition.x -= (goatWalkSpeed) * Time.deltaTime; // speed at which it returns
 				} else {
 					goatState = (int)GoatMoveState.normal;
 				}

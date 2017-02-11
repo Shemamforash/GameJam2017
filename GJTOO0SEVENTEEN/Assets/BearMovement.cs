@@ -9,15 +9,19 @@ public class BearMovement : MonoBehaviour {
 	private float bearXVelocity = 5f;
 	private bool bearHasBeenHit = false;
 
-	private const float timeBearDisappearsInSecs = 0.5f;
+	private const float timeBearDisappearsInSecs = 0.08f;
 	private float bearHitTimer = 0f;
 
-	// Use this for initialization
 	void Start () {
-		
+		gameObject.tag = "Bear";
 	}
 	
-	// Update is called once per frame
+    void OnCollisionEnter2D(Collision2D coll) {
+    	if (coll.gameObject.tag == "Bear") {
+			BearHasBeenHit();
+    	}
+    }
+
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
 		deltaPosition.x -= bearSpeed * Time.deltaTime;
@@ -26,11 +30,11 @@ public class BearMovement : MonoBehaviour {
 			bearXVelocity *= 1.4f; // acceleration
 			if (bearXVelocity > 100f) {
 				bearXVelocity = 100f;	
-			}
+			}	
 			deltaPosition.x += bearXVelocity * Time.deltaTime;			
-			bearHitTimer += bearHitTimer;
+			bearHitTimer += Time.deltaTime;
 			if (bearHitTimer > timeBearDisappearsInSecs) {
-
+				gameObject.SetActive(false);
 			}
 		}
 		transform.position += deltaPosition;
@@ -39,16 +43,19 @@ public class BearMovement : MonoBehaviour {
 		const float screenWidth = 26f; // TODO: it there a way to get this properly?
 
 		if (transform.position.x < screenLeft) {
-			// the bear has got past!
+			// the bear has gotten past the goat!
 			if (GameInfo.IncBearGotPast()) {
 				SceneManager.LoadScene("Level Up Scene");
 			}
 		}
 	}
 
-	void HandleCollisionWithGoat() {
+	void BearHasBeenHit() {
 		bearHasBeenHit = true;
 		++GameInfo.bearsKilled;
-		print("HandleCollisionWithGoat");
+	}
+
+	void HandleCollisionWithGoat() {
+		BearHasBeenHit();
 	}
 }

@@ -13,7 +13,9 @@ public class Movement : MonoBehaviour {
 	private int goatState = (int)GoatMoveState.normal;
 
 	private const float goatSpeed = 8f;
-	private const float goatInitalX = -8f; // TODO: just arbitrarily chosen, is there a more robust way?
+	private float goatInitialXMetres = 1f;
+	private float goatInitialXWorld; 
+
 	private const float goatMaxBashPowerAmountInSeconds = 1f;
 
 	private const string moveUpKey = "w";
@@ -30,16 +32,12 @@ public class Movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		goatInitialXWorld = GameInfo.MetresToWorldX(goatInitialXMetres);
 		rb = gameObject.GetComponent<Rigidbody2D>();
-		if (bashPowerupBar != null) {
-			print("found it");
-		}
-		// transform.localScale = new Vector3(5, 5, 0);
-		transform.localPosition = new Vector3(goatInitalX, 0, 0);
+		transform.localPosition = new Vector3(goatInitialXWorld, 0, 0);
 	}
 
     void OnCollisionEnter2D(Collision2D coll) {
-		print("OnCollisionEnter2D goat state: " + goatState);
     	if (goatState == (int)GoatMoveState.bashing) {
 	    	goatState = (int)GoatMoveState.returning;
 			coll.gameObject.SendMessage("HandleCollisionWithGoat");    		
@@ -90,7 +88,7 @@ public class Movement : MonoBehaviour {
 				const float maxDistance = 12f; // how far can the goat go with full powerup
 				float distanceOfThisBash = maxDistance * goatBashPowerupValue;
 
-				if (transform.position.x < (goatInitalX + distanceOfThisBash)) {
+				if (transform.position.x < (goatInitialXWorld + distanceOfThisBash)) {
 					goatXVelocity *= 1.5f; // acceleration
 					if (goatXVelocity > 100f) {
 						goatXVelocity = 100f;
@@ -102,7 +100,7 @@ public class Movement : MonoBehaviour {
 				break;
 			}
 			case (int)GoatMoveState.returning: {
-				if (transform.position.x > goatInitalX) {
+				if (transform.position.x > goatInitialXWorld) {
 					if (goatBashPowerupValue > 0f) {
 						goatBashPowerupValue -= 1f * Time.deltaTime;						
 					} else {
@@ -123,9 +121,10 @@ public class Movement : MonoBehaviour {
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
 
-		levelText.text = "Levelll";
+		// levelText.text = "Levelll";
 
 	}
+
 
 }
 

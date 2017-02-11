@@ -5,17 +5,25 @@ using UnityEngine;
 public class BearSpawner : MonoBehaviour {
 	public GameObject bearPrefab;
 
-	private const int numBears = 4;
-	private GameObject[] bears = new GameObject[numBears];
+	private GameObject[] bears;
 
 	// Use this for initialization
 	void Start () {
+
+		int numBears = GameInfo.GetNumBears();
+		bears = new GameObject[numBears];
+
 		for (int i = 0; i < numBears; ++i) {
 			bears[i] = new GameObject();
-			const float screenRight = 12f; // TODO: Can we get this value properly?
-			const float screenBottom = -5f; // TODO: Can we get this value properly?
-			const float screenHeight = 10f; // TODO: Can we get this value properly?
-			const float rangeOfXScatter = 5f;
+			float screenRight = GameInfo.GetWorldRight(); 
+			float screenBottom = GameInfo.GetWorldBottom(); 
+			float screenHeight = GameInfo.GetWorldHeight(); 
+			float rangeOfXScatter = GameInfo.MetresToWorldX(3f);
+
+			print("screenRight " + screenRight);
+			print("screenBottom " + screenBottom);
+			print("screenHeight " + screenHeight);			;
+			
 			Vector3 position = new Vector3(screenRight + Random.value * rangeOfXScatter, 
 			                               screenBottom + Random.value * screenHeight, 
 			                               0);

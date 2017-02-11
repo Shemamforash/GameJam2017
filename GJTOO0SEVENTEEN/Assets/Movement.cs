@@ -8,15 +8,15 @@ public class Movement : MonoBehaviour {
 	private int goatState = (int)GoatMoveState.normal;
 
 	private const float goatSpeed = 5f;
-	private const float goatInitalX = -8f;
-	private float goatXVelocity = 0;
-	private float goatBashPowerupValue = 0f; // [0, 1]
-
-	private const float goatMaxBashPowerAmountInSeconds = 4f;
+	private const float goatInitalX = -8f; // TODO: just arbitrarily chosen, is there a more robust way?
+	private const float goatMaxBashPowerAmountInSeconds = 1f;
 
 	private const string moveUpKey = "w";
 	private const string moveDownKey = "s";
 	private const string bashKey = "space";
+
+	private float goatXVelocity = 0; // velocity of goat as it is bashing
+	private float goatBashPowerupValue = 0f; // [0, 1]
 
 	// Use this for initialization
 	void Start () {
@@ -25,8 +25,11 @@ public class Movement : MonoBehaviour {
 	}
 
     void OnCollisionEnter2D(Collision2D coll) {
-        // if (coll.gameObject.tag == "Enemy")
-		coll.gameObject.SendMessage("HandleCollisionWithGoat");
+		print("OnCollisionEnter2D goat state: " + goatState);
+    	if (goatState == (int)GoatMoveState.bashing) {
+	    	goatState = (int)GoatMoveState.returning;
+			coll.gameObject.SendMessage("HandleCollisionWithGoat");    		
+    	}
     }
 
 	void Update () {
@@ -100,7 +103,8 @@ public class Movement : MonoBehaviour {
 			}
 		}
 
-		transform.position += deltaPosition;
+		// transform.position += deltaPosition;
+		transform.Translate(deltaPosition);
 	}
 
 }

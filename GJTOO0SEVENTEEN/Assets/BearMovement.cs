@@ -25,13 +25,19 @@ public class BearMovement : MonoBehaviour {
 			}
 			deltaPosition.x += bearXVelocity * Time.deltaTime;			
 		}
+		transform.position += deltaPosition;
 
-		transform.position += deltaPosition;		
+		const float screenLeft = -12f;
+		const float screenWidth = 26f;
+		if (transform.position.x < screenLeft) {
+			Vector3 translation = new Vector3(screenWidth, 0, 0);
+			transform.Translate(translation);
+		}
 	}
 
 	void HandleCollisionWithGoat() {
 		bearHasBeenHit = true;
-		print("YOU FOOL");
+		print("HandleCollisionWithGoat");
 	}
 
 }

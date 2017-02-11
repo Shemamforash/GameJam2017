@@ -38,10 +38,11 @@ public class Movement : MonoBehaviour {
 	}
 
     void OnCollisionEnter2D(Collision2D coll) {
-    	// TODO: somethings wrong... the collision isnt happening when it should
-    	if (goatState == (int)GoatMoveState.bashing) {
+    	GameObject obj = coll.gameObject;
+    	if (goatState == (int)GoatMoveState.bashing &&
+    	    obj.transform.position.x > transform.position.x) {
 	    	goatState = (int)GoatMoveState.returning;
-			coll.gameObject.SendMessage("HandleCollisionWithGoat");    		
+			obj.SendMessage("HandleCollisionWithGoat");    		
     	}
     }
 

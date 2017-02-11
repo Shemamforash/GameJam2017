@@ -57,6 +57,7 @@ public static class GameInfo {
 		levelNum = 0;		
 		bearsGotPast = 0;
 		bearsKilled = 0;
+		numBearsStillOnLevel = 0;
 	}
 
 	public static void IncBearsKilled() {

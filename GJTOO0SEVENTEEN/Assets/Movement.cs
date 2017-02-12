@@ -51,6 +51,7 @@ public class Movement : MonoBehaviour {
     	if (goatState == (int)GoatMoveState.bashing &&
     	    obj.transform.position.x >= transform.position.x) {
 
+	    	goatState = (int)GoatMoveState.returning;
 			BearMovement bm = obj.GetComponent<BearMovement>();
 			bm.BearHasBeenHit();
     	}
@@ -71,7 +72,7 @@ public class Movement : MonoBehaviour {
 				} 
 				if (Input.GetKey(moveDownKey)) {
 					deltaPosition.y -= goatSpeed * Time.deltaTime;
-				}			
+				}					
 
 				// 
 				// handle if the bash key is used
@@ -130,11 +131,23 @@ public class Movement : MonoBehaviour {
 		} else if (newScale.x < 0 && goatState != (int)GoatMoveState.returning) {
 			newScale.x *= -1;
 		}
-		transform.localScale = newScale;
+		transform.localScale = newScale;	
 
-		const float arbitraryModifier = 75f; // just picked because it feels about right...
-		Vector3 velo = deltaPosition * arbitraryModifier;
-		rb.velocity = velo;
+		float newYPosition = rb.position.y + deltaPosition.y;
+		float worldTop = GameInfo.GetWorldTop();
+		float worldBottom = GameInfo.MetresToWorldY(0);
+		float distanceToTop = transform.localScale.y * 1.7f;
+		float distanceToBottom = transform.localScale.y * 1.5f;
+
+		if (newYPosition <= worldTop - distanceToTop && newYPosition >= worldBottom + distanceToBottom) {
+			const float arbitraryModifier = 75f; // just picked because it feels about right...
+			Vector3 velo = deltaPosition * arbitraryModifier;
+			rb.velocity = velo;
+		} else if (newYPosition > worldTop - distanceToTop) {
+			rb.position = new Vector3(goatInitialXWorld, worldTop - distanceToTop, 0);
+		} else if (newYPosition < worldBottom + distanceToBottom) {
+			rb.position = new Vector3(goatInitialXWorld, worldBottom + distanceToBottom, 0);
+		}
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
 

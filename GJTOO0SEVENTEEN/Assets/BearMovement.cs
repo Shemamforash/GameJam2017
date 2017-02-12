@@ -32,6 +32,8 @@ public class BearMovement : MonoBehaviour
         SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
         switch (health)
         {
+            case 0: // he dead
+                break;
             case 1:
                 sr.color = Color.white;
                 bearSpeed = 1.5f;

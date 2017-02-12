@@ -30,14 +30,18 @@ public class BearSpawner : MonoBehaviour {
 			timeUntilNextSpawn = 0.4f + Random.value * 0.6f;
 
 			float screenRight = GameInfo.GetWorldRight(); 
-			float screenBottom = GameInfo.GetWorldBottom(); 
+			float screenBottom = GameInfo.MetresToWorldY(0); 
 			float screenHeight = GameInfo.GetWorldHeight(); 
+			float screenTop = GameInfo.GetWorldTop();
 			const float xScatterOfBearsInMetres = 6f;
 			float rangeOfXScatter = GameInfo.MetresToWorldX(xScatterOfBearsInMetres);
 
+			float distanceToTop = transform.localScale.y * 1.7f;
+			float distanceToBottom = transform.localScale.y * 1.5f;
+
 			bears[currentBearIndex] = new GameObject();
 			Vector3 position = new Vector3(screenRight, 
-			                               screenBottom + Random.value * screenHeight, 
+			                               screenBottom + distanceToBottom + Random.value * (screenHeight - distanceToTop - distanceToBottom), 
 			                               0);
 			Quaternion rotation = new Quaternion(0, 0, 0, 0);
 			bears[currentBearIndex] = Object.Instantiate(bearPrefab, position, rotation);

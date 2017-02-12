@@ -28,7 +28,7 @@ public static class GameInfo {
 	}
 
 	public static float GetWorldHeight() {
-		return MetresToWorldY(0) - GetWorldBottom();
+		return GetWorldTop() - MetresToWorldY(0);
 	}
 	public static float GetWorldWidth() {
 		return GetWorldRight() - MetresToWorldX(0);
@@ -37,7 +37,7 @@ public static class GameInfo {
 	public static float GetWorldRight() {
 		return MetresToWorldX(screenWidthInMetres);
 	}
-	public static float GetWorldBottom() {
+	public static float GetWorldTop() {
 		return MetresToWorldY(screenHeightInMetres);
 	}
 

@@ -56,6 +56,9 @@ public static class GameInfo {
 	public static int numBearsStillOnLevel = 0;
 	private static int numBearsKilledThisLevel = 0;
 
+	public static int GetTotalBearsKilled(){
+		return totalBearsKilled;
+	}
 	public static int GetNumBears() {
 		const int numBearsToIncPerLevel = 5;
 		int result = 5 + levelNum * numBearsToIncPerLevel;

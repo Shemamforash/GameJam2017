@@ -57,7 +57,7 @@ public class BearMovement : MonoBehaviour
     {
         float rangeOfSpeed = 1f;
         float speedBuffer = 0.25f;
-        float ranInRange = Random.Range(0f, rangeOfSpeed) - rangeOfSpeed;
+        float ranInRange = Random.Range(0f, rangeOfSpeed) - (rangeOfSpeed / 2);
         bearSpeed = bearSpeed + ranInRange + speedBuffer;
     }
 

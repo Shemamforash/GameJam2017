@@ -124,6 +124,8 @@ public class Movement : MonoBehaviour {
 					// }
 					deltaPosition.x -= (goatWalkSpeed) * Time.deltaTime; // speed at which it returns
 				} else {
+					Vector3 newPos = new Vector3(goatInitialXWorld, transform.position.y, 0);
+					transform.position = newPos;		
 					goatState = (int)GoatMoveState.normal;
 				}
 
@@ -144,15 +146,16 @@ public class Movement : MonoBehaviour {
 		float worldBottom = GameInfo.MetresToWorldY(0);
 		float distanceToTop = transform.localScale.y * 1.7f;
 		float distanceToBottom = transform.localScale.y * 1.5f;
+		float epsilon = 0.0001f;		
 
 		if (newYPosition <= worldTop - distanceToTop && newYPosition >= worldBottom + distanceToBottom) {
 			const float arbitraryModifier = 75f; // just picked because it feels about right...
 			Vector3 velo = deltaPosition * arbitraryModifier;
 			rb.velocity = velo;
 		} else if (newYPosition > worldTop - distanceToTop) {
-			rb.position = new Vector3(goatInitialXWorld, worldTop - distanceToTop, 0);
+			rb.position = new Vector3(goatInitialXWorld, worldTop - distanceToTop - epsilon, 0);
 		} else if (newYPosition < worldBottom + distanceToBottom) {
-			rb.position = new Vector3(goatInitialXWorld, worldBottom + distanceToBottom, 0);
+			rb.position = new Vector3(goatInitialXWorld, worldBottom + distanceToBottom - epsilon, 0);
 		}
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;

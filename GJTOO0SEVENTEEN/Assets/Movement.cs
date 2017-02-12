@@ -6,6 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
 	public Image bashPowerupBar;
+	public AudioSource goatSound;
 	// public Text levelText;
 	// public Text bearsText;
 

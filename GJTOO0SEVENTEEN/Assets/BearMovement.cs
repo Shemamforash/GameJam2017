@@ -19,6 +19,12 @@ public class BearMovement : MonoBehaviour {
 
 	public GameObject poofObject;
 
+	private int health = 1;
+
+	public void SetHealth(int health){
+		this.health = health;
+	}
+
 	void Start () {
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		gameObject.tag = "Bear";
@@ -37,9 +43,13 @@ public class BearMovement : MonoBehaviour {
     }
 
 	void DestroyBear(){
-		GameObject.Instantiate(poofObject, transform.position, transform.rotation);
-		GameObject.Destroy(gameObject);
-		print("Bear killed!!");
+		if(health == 0){
+			GameObject.Instantiate(poofObject, transform.position, transform.rotation);
+			GameObject.Destroy(gameObject);
+			print("Bear killed!!");
+		} else {
+			--health;
+		}
 	}
 
 	void Update () {

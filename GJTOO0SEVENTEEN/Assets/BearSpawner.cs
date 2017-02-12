@@ -41,6 +41,15 @@ public class BearSpawner : MonoBehaviour {
 			                               0);
 			Quaternion rotation = new Quaternion(0, 0, 0, 0);
 			bears[currentBearIndex] = Object.Instantiate(bearPrefab, position, rotation);
+			int ran = Random.Range(0, 10);
+			if(ran < 5){
+				ran = 1;
+			} else if(ran < 9){
+				ran = 2;
+			} else {
+				ran = 3;
+			}
+			bears[currentBearIndex].GetComponent<BearMovement>().SetHealth(ran);
 			++currentBearIndex;
 		}
 	}

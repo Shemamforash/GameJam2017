@@ -79,6 +79,8 @@ public static class GameInfo {
 	}
 
 	public static void ResetGame() {
+		walkSpeedModifier = 0;
+		chargeModifier = 0;
 		bearAccumulator = 0;
 		numBearsKilledThisLevel = 0;
 		levelNum = 0;		

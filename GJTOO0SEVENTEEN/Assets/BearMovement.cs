@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; //
 
 public class BearMovement : MonoBehaviour {
 
-	private float bearSpeed = 3f;
+	private float bearSpeed = 1.5f;
 	private float bearXVelocity = 5f;
 	private bool bearHasBeenHit = false;
 
@@ -16,6 +16,8 @@ public class BearMovement : MonoBehaviour {
 
 	private const float timeBearDisappearsInSecs = 0.08f;
 	private float bearHitTimer = 0f;
+
+	public GameObject poofObject;
 
 	void Start () {
 		rb = gameObject.GetComponent<Rigidbody2D>();
@@ -30,23 +32,32 @@ public class BearMovement : MonoBehaviour {
     		// this should only happen when there has first been a collision with the goat otherwise
     		// the bears can kill each other by just walking around by themselves
 			// BearHasBeenHit();
+			DestroyBear();
     	}
     }
+
+	void DestroyBear(){
+		GameObject.Instantiate(poofObject, transform.position, transform.rotation);
+		GameObject.Destroy(gameObject);
+		print("Bear killed!!");
+	}
 
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
 		deltaPosition.x -= bearSpeed * Time.deltaTime;
 
 		if (bearHasBeenHit) {
-			bearXVelocity *= 1.4f; // acceleration
-			if (bearXVelocity > 100f) {
-				bearXVelocity = 100f;	
-			}	
-			deltaPosition.x += bearXVelocity * Time.deltaTime;			
-			bearHitTimer += Time.deltaTime;
-			if (bearHitTimer > timeBearDisappearsInSecs) {
-				gameObject.SetActive(false);
-			}
+			// bearXVelocity *= 1.4f; // acceleration
+			// if (bearXVelocity > 100f) {
+			// 	bearXVelocity = 100f;	
+			// }	
+			// deltaPosition.x += bearXVelocity * Time.deltaTime;			
+			// bearHitTimer += Time.deltaTime;
+			// if (bearHitTimer > timeBearDisappearsInSecs) {
+			// 	gameObject.SetActive(false);
+			// }
+			DestroyBear();
+			
 		}
 		transform.position += deltaPosition;
 
@@ -79,13 +90,12 @@ public class BearMovement : MonoBehaviour {
 		}
 	}
 
-	void BearHasBeenHit() {
+	public void BearHasBeenHit() {
 		bearHasBeenHit = true;
-		print("Bear killed!!");
 		GameInfo.IncBearsKilled();
 	}
 
-	void HandleCollisionWithGoat() {
-		BearHasBeenHit();
-	}
+	// void HandleCollisionWithGoat() {
+		// BearHasBeenHit();
+	// }
 }

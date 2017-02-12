@@ -8,7 +8,9 @@ public class BearSpawner : MonoBehaviour {
 	public Text levelNo, bearsKilled;
 
 	private GameObject[] bears;
-
+	private float timeCounterSeconds = 0f;
+	private float timeUntilNextSpawn = 0.8f;
+	private int currentBearIndex = 0;
 	private int numBears;
 
 	// Use this for initialization
@@ -16,26 +18,30 @@ public class BearSpawner : MonoBehaviour {
 		levelNo.text = "Level: " + GameInfo.GetLevelNo();
 		numBears = GameInfo.GetNumBears();
 		bears = new GameObject[numBears];
+	}
+	
+	void Update () {
+		bearsKilled.text = "Bears Killed: " + GameInfo.GetBearsKilledThisLevel() + "/" + numBears;
 
-		for (int i = 0; i < numBears; ++i) {
-			bears[i] = new GameObject();
+		timeCounterSeconds += Time.deltaTime;
+
+		if (timeCounterSeconds > timeUntilNextSpawn && currentBearIndex < numBears) {
+			timeCounterSeconds = 0;
+			timeUntilNextSpawn = 0.4f + Random.value * 0.6f;
 
 			float screenRight = GameInfo.GetWorldRight(); 
 			float screenBottom = GameInfo.GetWorldBottom(); 
 			float screenHeight = GameInfo.GetWorldHeight(); 
-			const float xScatterOfBearsInMetres = 3f;
+			const float xScatterOfBearsInMetres = 6f;
 			float rangeOfXScatter = GameInfo.MetresToWorldX(xScatterOfBearsInMetres);
-			Vector3 position = new Vector3(screenRight + Random.value * rangeOfXScatter, 
+
+			bears[currentBearIndex] = new GameObject();
+			Vector3 position = new Vector3(screenRight, 
 			                               screenBottom + Random.value * screenHeight, 
 			                               0);
-			
 			Quaternion rotation = new Quaternion(0, 0, 0, 0);
-			bears[i] = Object.Instantiate(bearPrefab, position, rotation);
+			bears[currentBearIndex] = Object.Instantiate(bearPrefab, position, rotation);
+			++currentBearIndex;
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		bearsKilled.text = "Bears Killed: " + GameInfo.GetBearsKilledThisLevel() + "/" + numBears;
 	}
 }

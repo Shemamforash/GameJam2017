@@ -6,15 +6,14 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
 	public Image bashPowerupBar;
-	public Text levelText;
-	public Text bearsText;
+	// public Text levelText;
+	// public Text bearsText;
 
 	enum GoatMoveState {normal, bashing, returning};
 	private int goatState = (int)GoatMoveState.normal;
 
 	private const float goatSpeed = 8f;
 	private float goatWalkSpeed;
-	private float goatInitialXMetres = 1f;
 	private float goatInitialXWorld; 
 
 	private float goatMaxBashPowerAmountInSeconds = 5f;
@@ -28,11 +27,10 @@ public class Movement : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-	// Use this for initialization
 	void Start () {
 		goatWalkSpeed = goatSpeed * GameInfo.GetWalkSpeedModifier();
 		goatMaxBashPowerAmountInSeconds *= GameInfo.GetChargeModifier();
-		goatInitialXWorld = GameInfo.MetresToWorldX(goatInitialXMetres);
+		goatInitialXWorld = GameInfo.MetresToWorldX(GamInfo.goatInitialXMetres);
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		transform.localPosition = new Vector3(goatInitialXWorld, 0, 0);
 	}
@@ -50,6 +48,7 @@ public class Movement : MonoBehaviour {
 
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
+
 		switch (goatState) {
 			case (int)GoatMoveState.normal: {
 
@@ -82,8 +81,8 @@ public class Movement : MonoBehaviour {
 				break;
 			}
 			case (int)GoatMoveState.bashing: {
-				const float maxDistance = 12f; // how far can the goat go with full powerup
-				float distanceOfThisBash = maxDistance * goatBashPowerupValue;
+				const float maxDistanceMetres = 8f; // how far can the goat go with full powerup
+				float distanceOfThisBash = GameInfo.MetresToWorldX(maxDistanceMetres) * goatBashPowerupValue;
 
 				if (transform.position.x < (goatInitialXWorld + distanceOfThisBash)) {
 					goatXVelocity *= 1.5f; // acceleration
@@ -112,13 +111,19 @@ public class Movement : MonoBehaviour {
 			}
 		}
 
+		Vector3 newScale = transform.localScale;
+		if (newScale.x > 0 && goatState == (int)GoatMoveState.returning) {
+			newScale.x *= -1;
+		} else if (newScale.x < 0 && goatState != (int)GoatMoveState.returning) {
+			newScale.x *= -1;
+		}
+		transform.localScale = newScale;
+
 		const float arbitraryModifier = 75f; // just picked because it feels about right...
 		Vector3 velo = deltaPosition * arbitraryModifier;
 		rb.velocity = velo;
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
-
-		// levelText.text = "Levelll";
 
 	}
 

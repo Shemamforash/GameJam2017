@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BearSpawner : MonoBehaviour {
 	public GameObject bearPrefab;
+	public Text levelNo, bearsKilled;
 
 	private GameObject[] bears;
 
+	private int numBears;
+
 	// Use this for initialization
 	void Start () {
-
-		int numBears = GameInfo.GetNumBears();
+		levelNo.text = "Level: " + GameInfo.GetLevelNo();
+		numBears = GameInfo.GetNumBears();
 		bears = new GameObject[numBears];
 
 		for (int i = 0; i < numBears; ++i) {
@@ -32,6 +36,6 @@ public class BearSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		bearsKilled.text = "Bears Killed: " + GameInfo.GetBearsKilledThisLevel() + "/" + numBears;
 	}
 }

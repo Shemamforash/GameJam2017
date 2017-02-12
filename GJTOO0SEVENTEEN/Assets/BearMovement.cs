@@ -95,8 +95,10 @@ public class BearMovement : MonoBehaviour {
 	}
 
 	public void BearHasBeenHit() {
-		bearHasBeenHit = true;
-		GameInfo.IncBearsKilled();
+		if (bearHasBeenHit == false) {
+			bearHasBeenHit = true;
+			GameInfo.IncBearsKilled();			
+		}
 	}
 
 	// void HandleCollisionWithGoat() {

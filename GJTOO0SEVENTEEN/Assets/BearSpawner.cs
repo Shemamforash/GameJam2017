@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BearSpawner : MonoBehaviour {
 	public GameObject bearPrefab;
+	public Text levelNo, bearsKilled;
 
 	private GameObject[] bears;
 	private float timeCounterSeconds = 0f;
@@ -11,12 +13,16 @@ public class BearSpawner : MonoBehaviour {
 	private int currentBearIndex = 0;
 	private int numBears;
 
+	// Use this for initialization
 	void Start () {
+		levelNo.text = "Level: " + GameInfo.GetLevelNo();
 		numBears = GameInfo.GetNumBears();
 		bears = new GameObject[numBears];
 	}
 	
 	void Update () {
+		bearsKilled.text = "Bears Killed: " + GameInfo.GetBearsKilledThisLevel() + "/" + numBears;
+
 		timeCounterSeconds += Time.deltaTime;
 
 		if (timeCounterSeconds > timeUntilNextSpawn && currentBearIndex < numBears) {

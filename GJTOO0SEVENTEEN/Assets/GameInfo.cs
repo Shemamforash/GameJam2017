@@ -54,6 +54,7 @@ public static class GameInfo {
 	private static int totalBearsGotPast = 0;
 	private static int bearsGotPast = 0;
 	public static int numBearsStillOnLevel = 0;
+	private static int numBearsKilledThisLevel = 0;
 
 	public static int GetNumBears() {
 		const int numBearsToIncPerLevel = 5;
@@ -62,13 +63,19 @@ public static class GameInfo {
 		return result;
 	}
 
+	public static int GetLevelNo(){
+		return levelNum + 1;
+	}
+
 	public static void NextLevel(){
 		bearsGotPast = 0;
+		numBearsKilledThisLevel = 0;
 		++levelNum;
 		SceneManager.LoadScene("Game");
 	}
 
 	public static void ResetGame() {
+		numBearsKilledThisLevel = 0;
 		levelNum = 0;		
 		bearsGotPast = 0;
 		bearPoints = 0;
@@ -78,6 +85,7 @@ public static class GameInfo {
 	}
 
 	public static void IncBearsKilled() {
+		++numBearsKilledThisLevel;
 		++bearPoints;
 		totalBearsKilled++;
 		numBearsStillOnLevel--;
@@ -92,6 +100,11 @@ public static class GameInfo {
 			SceneManager.LoadScene("Game Over");
 		}
 		CheckIfGameIsOver();
+	}
+
+	public static int GetBearsKilledThisLevel(){
+		return numBearsKilledThisLevel;
+
 	}
 
 	public static void CheckIfGameIsOver() {

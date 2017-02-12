@@ -66,18 +66,7 @@ public class BearMovement : MonoBehaviour
 
         // const float rangeOfSpeed = 2f;
         // bearSpeed = 2f + Random.value * rangeOfSpeed;
-		SetColor();
-    }
-
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        if (coll.gameObject.tag == "Bear")
-        {
-            // this should only happen when there has first been a collision with the goat otherwise
-            // the bears can kill each other by just walking around by themselves
-            // BearHasBeenHit();
-            DestroyBear();
-        }
+        SetColor();
     }
 
     void DestroyBear()

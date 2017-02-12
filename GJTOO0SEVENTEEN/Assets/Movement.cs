@@ -77,7 +77,6 @@ public class Movement : MonoBehaviour {
 				// 
 				// handle if the bash key is used
 				//
-
 				
 				if(Input.GetKey(bashKey)){
 					if (goatBashPowerupValue < 1) {
@@ -107,13 +106,15 @@ public class Movement : MonoBehaviour {
 				float targetXPosMetresOfThisBash = minDistanceMetres + (maxDistanceMetres - minDistanceMetres) * goatBashPowerupValue;
 				float distanceOfThisBash = GameInfo.MetresToWorldX(targetXPosMetresOfThisBash);
 
-				if (transform.position.x < (distanceOfThisBash)) {
+				if (transform.position.x < distanceOfThisBash) {
 					goatXVelocity *= 1.5f; // acceleration
 					if (goatXVelocity > 100f) {
 						goatXVelocity = 100f;
 					}
 					deltaPosition.x = goatXVelocity * Time.deltaTime;
 				} else {
+					Vector3 newPos = new Vector3(distanceOfThisBash, transform.position.y, 0);
+					transform.position = newPos;			
 					goatState = (int)GoatMoveState.returning;
 				}
 				break;

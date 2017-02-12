@@ -46,6 +46,12 @@ public class Movement : MonoBehaviour {
     	}
     }
 
+    void OnTriggerStay2D(Collider2D coll) {
+    	print("collsion is happening");
+    	GameObject obj = coll.gameObject;
+
+    }
+
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
 
@@ -82,7 +88,9 @@ public class Movement : MonoBehaviour {
 			}
 			case (int)GoatMoveState.bashing: {
 				const float maxDistanceMetres = 8f; // how far can the goat go with full powerup
-				float distanceOfThisBash = GameInfo.MetresToWorldX(maxDistanceMetres) * goatBashPowerupValue;
+				const float minDistanceMetres = 2f; 
+				float distanceOfThisBash = GameInfo.MetresToWorldX(minDistanceMetres) + 
+							               GameInfo.MetresToWorldX(maxDistanceMetres - minDistanceMetres) * goatBashPowerupValue;
 
 				if (transform.position.x < (goatInitialXWorld + distanceOfThisBash)) {
 					goatXVelocity *= 1.5f; // acceleration

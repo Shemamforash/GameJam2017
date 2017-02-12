@@ -76,9 +76,13 @@ public class BearMovement : MonoBehaviour {
 		} else if (enteredMapForFirstTime && !bearHasBeenHit) {
 			// the bear has been flown off the map somehow
 			enteredMapForFirstTime = false;
-			gameObject.SetActive(false);
-			print("Bear killed by flying off the map");
-			GameInfo.IncBearsKilled();
+			// gameObject.SetActive(false);
+			// print("Bear killed by flying off the map");
+			// GameInfo.IncBearsKilled();
+		}
+
+		if (transform.position.x < GameInfo.MetresToWorldX(GameInfo.goatInitialXMetres)) {
+			bearSpeed *= 1.1f;
 		}
 
 		if (!bearGotPastGoat && transform.position.x < screenLeft) {

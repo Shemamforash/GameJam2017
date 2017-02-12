@@ -78,9 +78,8 @@ public class BearMovement : MonoBehaviour
         if (health == 0)
         {
             GameObject.Instantiate(poofObject, transform.position, transform.rotation);
+            GameInfo.IncBearsKilled();          
             GameObject.Destroy(gameObject);
-			GameInfo.IncBearsKilled();			
-            print("Bear killed!!");
         }
     }
 
@@ -130,16 +129,16 @@ public class BearMovement : MonoBehaviour
 
         if (transform.position.x < GameInfo.MetresToWorldX(GameInfo.goatInitialXMetres))
         {
-            bearSpeed *= 1.1f;
+            bearSpeed *= 1.08f;
         }
 
         if (!bearGotPastGoat && transform.position.x < screenLeft)
         {
             // the bear has gotten past the goat!
             bearGotPastGoat = true;
-            gameObject.SetActive(false);
             print("Bear got past!!");
             GameInfo.IncBearGotPast();
+            GameObject.Destroy(gameObject);
         }
     }
 

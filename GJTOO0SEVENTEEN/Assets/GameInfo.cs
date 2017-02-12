@@ -88,14 +88,12 @@ public static class GameInfo {
 		++numBearsKilledThisLevel;
 		++bearPoints;
 		totalBearsKilled++;
-		numBearsStillOnLevel--;
 		CheckIfGameIsOver();		
 	}
 
 	public static void IncBearGotPast() {
 		bearsGotPast++;
 		totalBearsGotPast++;
-		numBearsStillOnLevel--;
 		if (bearsGotPast > 6) {
 			SceneManager.LoadScene("Game Over");
 		}
@@ -108,6 +106,8 @@ public static class GameInfo {
 	}
 
 	public static void CheckIfGameIsOver() {
+		numBearsStillOnLevel--;
+		Debug.Log("numBearsStillOnLevel: " + numBearsStillOnLevel);
 		if (numBearsStillOnLevel <= 0) {
 			SceneManager.LoadScene("Level Up");
 		}

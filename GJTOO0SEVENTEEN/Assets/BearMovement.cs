@@ -131,6 +131,8 @@ public class BearMovement : MonoBehaviour
         }
     }
 
+    private bool bearDead =false;
+
     public bool BearHasBeenHit()
     {
         if (health != 0)
@@ -139,8 +141,9 @@ public class BearMovement : MonoBehaviour
             SetColor();
             bearHasBeenHit = true;
         }
-        if (health == 0)
+        if (health == 0 && !bearDead)
         {
+            bearDead = true;
             GameObject.Instantiate(poofObject, transform.position, transform.rotation);
             GameInfo.IncBearsKilled();
             GameObject.Destroy(gameObject);

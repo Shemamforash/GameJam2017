@@ -95,6 +95,9 @@ public class Movement : MonoBehaviour {
 				}
 
 				if (Input.GetKeyUp(bashKey)) {
+					if(!Camera.main.GetComponent<AudioSource>().isPlaying){
+						Camera.main.GetComponent<AudioSource>().Play();
+					}
 					// key released
 					if(goatBashPowerupValue == 1){
 						Vector3 offset = new Vector3(transform.position.x + 1f, transform.position.y, 0);

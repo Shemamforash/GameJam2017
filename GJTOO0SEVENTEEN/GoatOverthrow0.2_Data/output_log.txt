@@ -1,0 +1,559 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   NVIDIA
+    VRAM:     2019 MB
+    Driver:   10.18.15.4279
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.340 seconds
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Iovana\Desktop\GameJam2017\GJTOO0SEVENTEEN\GoatOverthrow0.2_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.812172 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 18.128052 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 265.
+Total: 0.781619 ms (FindLiveObjects: 0.068687 ms CreateObjectMapping: 0.082109 ms MarkObjects: 0.492262 ms  DeleteObjects: 0.106979 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.973471 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 282.
+Total: 0.721221 ms (FindLiveObjects: 0.061187 ms CreateObjectMapping: 0.062766 ms MarkObjects: 0.572003 ms  DeleteObjects: 0.023290 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.172034 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 1.068213 ms (FindLiveObjects: 0.074609 ms CreateObjectMapping: 0.089215 ms MarkObjects: 0.747275 ms  DeleteObjects: 0.155929 ms)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Movement.OnTriggerStay2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.605794 ms
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 1.541133 ms (FindLiveObjects: 0.080925 ms CreateObjectMapping: 0.086846 ms MarkObjects: 0.736222 ms  DeleteObjects: 0.635559 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.344543 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 1.128611 ms (FindLiveObjects: 0.089215 ms CreateObjectMapping: 0.095926 ms MarkObjects: 0.785962 ms  DeleteObjects: 0.155139 ms)
+
+numBearsStillOnLevel: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear got past!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.368624 ms
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 1.180719 ms (FindLiveObjects: 0.069082 ms CreateObjectMapping: 0.058029 ms MarkObjects: 0.548318 ms  DeleteObjects: 0.504105 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.124269 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 0.821490 ms (FindLiveObjects: 0.089215 ms CreateObjectMapping: 0.086846 ms MarkObjects: 0.525027 ms  DeleteObjects: 0.118427 ms)
+
+numBearsStillOnLevel: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Movement.OnTriggerStay2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Movement.OnTriggerStay2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Movement.OnTriggerStay2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.410387 ms
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 1.205194 ms (FindLiveObjects: 0.068293 ms CreateObjectMapping: 0.056845 ms MarkObjects: 0.579503 ms  DeleteObjects: 0.498578 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.001499 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 0.835701 ms (FindLiveObjects: 0.093952 ms CreateObjectMapping: 0.086057 ms MarkObjects: 0.534896 ms  DeleteObjects: 0.117242 ms)
+
+numBearsStillOnLevel: 19
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 18
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 17
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 16
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.906674 ms
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 1.231248 ms (FindLiveObjects: 0.072635 ms CreateObjectMapping: 0.061976 ms MarkObjects: 0.579898 ms  DeleteObjects: 0.515158 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.064660 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 0.945049 ms (FindLiveObjects: 0.175272 ms CreateObjectMapping: 0.075793 ms MarkObjects: 0.568055 ms  DeleteObjects: 0.121585 ms)
+
+numBearsStillOnLevel: 24
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 23
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 22
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 21
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 19
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 18
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 17
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 16
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 57.291149 ms
+
+Unloading 102 unused Assets to reduce memory usage. Loaded Objects now: 304.
+Total: 1.241117 ms (FindLiveObjects: 0.063555 ms CreateObjectMapping: 0.081320 ms MarkObjects: 0.580293 ms  DeleteObjects: 0.514368 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.065845 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 407.
+Total: 0.888993 ms (FindLiveObjects: 0.080530 ms CreateObjectMapping: 0.065924 ms MarkObjects: 0.621348 ms  DeleteObjects: 0.119611 ms)
+
+numBearsStillOnLevel: 29
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 28
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 27
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 26
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 25
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 24
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 23
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 22
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 21
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 20
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 19
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 18
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 17
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 16
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear got past!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear got past!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Bear got past!!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+numBearsStillOnLevel: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4470 -> priority: 1 

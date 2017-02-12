@@ -78,22 +78,25 @@ public class Movement : MonoBehaviour {
 				// handle if the bash key is used
 				//
 
-				if (goatBashPowerupValue < 1) {
-					goatBashPowerupValue += Time.deltaTime / goatMaxBashPowerAmountInSeconds;
-				} else {
-					goatBashPowerupValue = 1;
+				
+				if(Input.GetKey(bashKey)){
+					if (goatBashPowerupValue < 1) {
+						goatBashPowerupValue += Time.deltaTime / goatMaxBashPowerAmountInSeconds;
+					} else {
+						goatBashPowerupValue = 1;
+					}
 				}
 
 				if (Input.GetKeyUp(bashKey)) {
 					// key released
 					if(goatBashPowerupValue == 1){
-						goatBashPowerupValue = 0;
-						Vector3 offset = new Vector3(transform.position.x + 0.5f, transform.position.y, 0);
+						Vector3 offset = new Vector3(transform.position.x + 1f, transform.position.y, 0);
 						GameObject.Instantiate(lavaPrefab, offset, transform.rotation);
 					} else {
 						goatXVelocity = goatSpeed; // set an inital velocity for the bash
 						goatState = (int)GoatMoveState.bashing;
 					}
+					goatBashPowerupValue = 0;
 				}
 				break;
 			}

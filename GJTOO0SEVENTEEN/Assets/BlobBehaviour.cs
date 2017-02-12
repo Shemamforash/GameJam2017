@@ -6,7 +6,7 @@ public class BlobBehaviour : MonoBehaviour
 {
     public float timeAlive, duration = 0.75f;
     private bool spawnedChild = false;
-    private int childNo = 30;
+    private int childNo = 50;
     public GameObject lavaPrefab;
     public bool fading = false;
 
@@ -46,6 +46,7 @@ public class BlobBehaviour : MonoBehaviour
             float newAlpha = currentCol.a - 0.02f;
             if (newAlpha < 0)
             {
+				GameObject.Destroy(gameObject.transform.FindChild("Point Light"));
                 GameObject.Destroy(this);
             }
             else

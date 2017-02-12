@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour {
 	private float goatWalkSpeed;
 	private float goatInitialXWorld; 
 
-	private float goatMaxBashPowerAmountInSeconds = 5f;
+	private float goatMaxBashPowerAmountInSeconds = 4f;
 
 	private const string moveUpKey = "w";
 	private const string moveDownKey = "s";

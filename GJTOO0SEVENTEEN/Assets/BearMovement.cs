@@ -76,22 +76,20 @@ public class BearMovement : MonoBehaviour
             // this should only happen when there has first been a collision with the goat otherwise
             // the bears can kill each other by just walking around by themselves
             // BearHasBeenHit();
-            DestroyBear();
+            HandleDamage();
         }
     }
 
-    void DestroyBear()
+    void HandleDamage()
     {
+        --health;
+        SetColor();
         if (health == 0)
         {
             GameObject.Instantiate(poofObject, transform.position, transform.rotation);
             GameObject.Destroy(gameObject);
+			GameInfo.IncBearsKilled();			
             print("Bear killed!!");
-        }
-        else
-        {
-            --health;
-            SetColor();
         }
     }
 
@@ -111,7 +109,7 @@ public class BearMovement : MonoBehaviour
             // if (bearHitTimer > timeBearDisappearsInSecs) {
             // 	gameObject.SetActive(false);
             // }
-            DestroyBear();
+            // HandleDamage();
 
         }
         transform.position += deltaPosition;
@@ -155,9 +153,9 @@ public class BearMovement : MonoBehaviour
     }
 
 	public void BearHasBeenHit() {
-		if (bearHasBeenHit == false) {
+		if (health != 0) {
+            HandleDamage();			
 			bearHasBeenHit = true;
-			GameInfo.IncBearsKilled();			
 		}
 	}
 

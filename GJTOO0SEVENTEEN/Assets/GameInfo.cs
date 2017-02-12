@@ -46,6 +46,8 @@ public static class GameInfo {
 	// Game state
 	//
 
+	private static float goatInitialXMetres = 1f;
+
 	private static int levelNum = 0;
 	private static int totalBearsKilled = 0;
 	private static int bearPoints = 0;

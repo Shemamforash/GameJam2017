@@ -6,15 +6,14 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
 
 	public Image bashPowerupBar;
-	public Text levelText;
-	public Text bearsText;
+	// public Text levelText;
+	// public Text bearsText;
 
 	enum GoatMoveState {normal, bashing, returning};
 	private int goatState = (int)GoatMoveState.normal;
 
 	private const float goatSpeed = 8f;
 	private float goatWalkSpeed;
-	private float goatInitialXMetres = 1f;
 	private float goatInitialXWorld; 
 
 	private float goatMaxBashPowerAmountInSeconds = 5f;
@@ -28,11 +27,10 @@ public class Movement : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-	// Use this for initialization
 	void Start () {
 		goatWalkSpeed = goatSpeed * GameInfo.GetWalkSpeedModifier();
 		goatMaxBashPowerAmountInSeconds *= GameInfo.GetChargeModifier();
-		goatInitialXWorld = GameInfo.MetresToWorldX(goatInitialXMetres);
+		goatInitialXWorld = GameInfo.MetresToWorldX(GamInfo.goatInitialXMetres);
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		transform.localPosition = new Vector3(goatInitialXWorld, 0, 0);
 	}
@@ -126,8 +124,6 @@ public class Movement : MonoBehaviour {
 		rb.velocity = velo;
 
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
-
-		// levelText.text = "Levelll";
 
 	}
 

@@ -48,6 +48,7 @@ public class Movement : MonoBehaviour {
 
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
+
 		switch (goatState) {
 			case (int)GoatMoveState.normal: {
 
@@ -87,8 +88,8 @@ public class Movement : MonoBehaviour {
 				break;
 			}
 			case (int)GoatMoveState.bashing: {
-				const float maxDistance = 12f; // how far can the goat go with full powerup
-				float distanceOfThisBash = maxDistance * goatBashPowerupValue;
+				const float maxDistanceMetres = 8f; // how far can the goat go with full powerup
+				float distanceOfThisBash = GameInfo.MetresToWorldX(maxDistanceMetres) * goatBashPowerupValue;
 
 				if (transform.position.x < (goatInitialXWorld + distanceOfThisBash)) {
 					goatXVelocity *= 1.5f; // acceleration
@@ -116,6 +117,14 @@ public class Movement : MonoBehaviour {
 				break;
 			}
 		}
+
+		Vector3 newScale = transform.localScale;
+		if (newScale.x > 0 && goatState == (int)GoatMoveState.returning) {
+			newScale.x *= -1;
+		} else if (newScale.x < 0 && goatState != (int)GoatMoveState.returning) {
+			newScale.x *= -1;
+		}
+		transform.localScale = newScale;
 
 		const float arbitraryModifier = 75f; // just picked because it feels about right...
 		Vector3 velo = deltaPosition * arbitraryModifier;

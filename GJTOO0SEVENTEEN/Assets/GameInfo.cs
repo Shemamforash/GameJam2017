@@ -11,6 +11,10 @@ public static class GameInfo {
 	public static float screenWidthInMetres = 8f;
 	public static float screenHeightInMetres = ((float)Screen.height / (float)Screen.width) * screenWidthInMetres;
 
+	public static float GetSizeOfMetreInWorldUnits() {
+		return GetWorldWidth() / screenWidthInMetres;
+	}
+
 	public static float MetresToWorldX(float x) {
 		float pixelsPerMetre = (float)Screen.width / screenWidthInMetres;
 		Vector3 p = Camera.main.ScreenToWorldPoint(new Vector3(pixelsPerMetre * x, 0, Camera.main.nearClipPlane));

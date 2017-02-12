@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; //
 
 public class BearMovement : MonoBehaviour {
 
-	private const float bearSpeed = 3f;
+	private float bearSpeed = 3f;
 	private float bearXVelocity = 5f;
 	private bool bearHasBeenHit = false;
 
@@ -21,6 +21,8 @@ public class BearMovement : MonoBehaviour {
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		gameObject.tag = "Bear";
 
+		const float rangeOfSpeed = 2f;
+		bearSpeed = 2f + Random.value * rangeOfSpeed;
 	}
 	
     void OnCollisionEnter2D(Collision2D coll) {
@@ -48,15 +50,22 @@ public class BearMovement : MonoBehaviour {
 		}
 		transform.position += deltaPosition;
 
+		// if (rb.velocity.x > 0 && bearHitTimer != 0) {
+		// 	// bit of a hack to detect when the bear has been hit (perhaps by the physics engine)
+		// 	print("greater than zero");
+		// 	bearHasBeenHit = true;
+		// }
+
 		float screenLeft = GameInfo.MetresToWorldX(0);
 		float screenRight = GameInfo.GetWorldRight(); 
-		float screenWidth = GameInfo.GetWorldWidth(); // TODO: it there a way to get this properly?
+		float screenWidth = GameInfo.GetWorldWidth();
 
 		if (transform.position.x < screenRight) {
 			enteredMapForFirstTime = true;
 		} else if (enteredMapForFirstTime && !bearHasBeenHit) {
 			// the bear has been flown off the map somehow
 			enteredMapForFirstTime = false;
+			gameObject.SetActive(false);
 			print("Bear killed by flying off the map");
 			GameInfo.IncBearsKilled();
 		}
@@ -64,6 +73,7 @@ public class BearMovement : MonoBehaviour {
 		if (!bearGotPastGoat && transform.position.x < screenLeft) {
 			// the bear has gotten past the goat!
 			bearGotPastGoat = true;
+			gameObject.SetActive(false);
 			print("Bear got past!!");
 			GameInfo.IncBearGotPast();
 		}

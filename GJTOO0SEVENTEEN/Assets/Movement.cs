@@ -57,6 +57,8 @@ public class Movement : MonoBehaviour {
     	}
     }
 
+	float goatBash = 0;
+
 	void Update () {
 		Vector3 deltaPosition = new Vector3();
 
@@ -93,6 +95,7 @@ public class Movement : MonoBehaviour {
 						GameObject.Instantiate(lavaPrefab, offset, transform.rotation);
 					} else {
 						goatXVelocity = goatSpeed; // set an inital velocity for the bash
+						goatBash = goatBashPowerupValue;
 						goatState = (int)GoatMoveState.bashing;
 					}
 					goatBashPowerupValue = 0;
@@ -103,7 +106,7 @@ public class Movement : MonoBehaviour {
 				const float maxDistanceMetres = 7f; // how far can the goat go with full powerup
 				float minDistanceMetres = GameInfo.goatInitialXMetres + 1f; 
 
-				float targetXPosMetresOfThisBash = minDistanceMetres + (maxDistanceMetres - minDistanceMetres) * goatBashPowerupValue;
+				float targetXPosMetresOfThisBash = minDistanceMetres + (maxDistanceMetres - minDistanceMetres) * goatBash;
 				float distanceOfThisBash = GameInfo.MetresToWorldX(targetXPosMetresOfThisBash);
 
 				if (transform.position.x < distanceOfThisBash) {
@@ -124,7 +127,7 @@ public class Movement : MonoBehaviour {
 					// if (goatBashPowerupValue > 0f) {
 						// goatBashPowerupValue -= 1f * Time.deltaTime;						
 					// } else {
-						goatBashPowerupValue = 0f;
+						goatBash = 0f;
 					// }
 					deltaPosition.x -= (goatWalkSpeed) * Time.deltaTime; // speed at which it returns
 				} else {
@@ -159,13 +162,9 @@ public class Movement : MonoBehaviour {
 		} else if (newYPosition > worldTop - distanceToTop) {
 			rb.position = new Vector3(goatInitialXWorld, worldTop - distanceToTop - epsilon, 0);
 		} else if (newYPosition < worldBottom + distanceToBottom) {
-			rb.position = new Vector3(goatInitialXWorld, worldBottom + distanceToBottom - epsilon, 0);
+			rb.position = new Vector3(goatInitialXWorld, worldBottom + distanceToBottom + epsilon, 0);
 		}
-
 		bashPowerupBar.fillAmount = goatBashPowerupValue;
-
 	}
-
-
 }
 

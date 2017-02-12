@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour {
 
 	enum GoatMoveState {normal, bashing, returning};
 	private int goatState = (int)GoatMoveState.normal;
-
+	public GameObject lavaPrefab;
 	private const float goatSpeed = 8f;
 	private float goatWalkSpeed;
 	private float goatInitialXWorld; 
@@ -85,8 +85,14 @@ public class Movement : MonoBehaviour {
 
 				if (Input.GetKeyUp(bashKey)) {
 					// key released
-					goatXVelocity = goatSpeed; // set an inital velocity for the bash
-					goatState = (int)GoatMoveState.bashing;
+					if(goatBashPowerupValue == 1){
+						goatBashPowerupValue = 0;
+						Vector3 offset = new Vector3(transform.position.x + 0.5f, transform.position.y, 0);
+						GameObject.Instantiate(lavaPrefab, offset, transform.rotation);
+					} else {
+						goatXVelocity = goatSpeed; // set an inital velocity for the bash
+						goatState = (int)GoatMoveState.bashing;
+					}
 				}
 				break;
 			}

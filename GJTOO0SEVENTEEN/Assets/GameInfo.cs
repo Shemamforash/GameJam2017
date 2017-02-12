@@ -106,7 +106,7 @@ public static class GameInfo {
 		bearsGotPast++;
 		Debug.Log(bearsGotPast);
 		totalBearsGotPast++;
-		if (bearsGotPast >= 10) {
+		if (totalBearsGotPast >= 10) {
 			SceneManager.LoadScene("Game Over");
 		} else {
 			CheckIfGameIsOver("past");			

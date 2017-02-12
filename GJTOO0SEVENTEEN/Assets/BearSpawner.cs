@@ -42,9 +42,10 @@ public class BearSpawner : MonoBehaviour {
 			Quaternion rotation = new Quaternion(0, 0, 0, 0);
 			bears[currentBearIndex] = Object.Instantiate(bearPrefab, position, rotation);
 			int ran = Random.Range(0, 10);
-			if(ran < 5){
+			int levelOffest = (int)Mathf.Floor((float)GameInfo.GetLevelNo() / 5f);
+			if(ran < 7 - levelOffest){
 				ran = 1;
-			} else if(ran < 9){
+			} else if(ran < 9 - levelOffest){
 				ran = 2;
 			} else {
 				ran = 3;

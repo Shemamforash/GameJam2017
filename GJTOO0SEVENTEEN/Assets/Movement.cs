@@ -42,7 +42,10 @@ public class Movement : MonoBehaviour {
     	    obj.transform.position.x >= transform.position.x) {
 	    	goatState = (int)GoatMoveState.returning;
 			BearMovement bm = obj.GetComponent<BearMovement>();
-			bm.BearHasBeenHit();
+			if(bm.BearHasBeenHit()){
+				gameObject.GetComponent<AudioSource>().Play();
+			}
+
 			// obj.SendMessage("HandleCollisionWithGoat");    		
     	}
     }
@@ -54,7 +57,9 @@ public class Movement : MonoBehaviour {
 
 	    	goatState = (int)GoatMoveState.returning;
 			BearMovement bm = obj.GetComponent<BearMovement>();
-			bm.BearHasBeenHit();
+			if(bm.BearHasBeenHit()){
+				gameObject.GetComponent<AudioSource>().Play();
+			}
     	}
     }
 

@@ -71,6 +71,7 @@ public static class GameInfo {
 	}
 
 	public static void NextLevel(){
+		bearAccumulator = 0;
 		bearsGotPast = 0;
 		numBearsKilledThisLevel = 0;
 		++levelNum;
@@ -78,6 +79,7 @@ public static class GameInfo {
 	}
 
 	public static void ResetGame() {
+		bearAccumulator = 0;
 		numBearsKilledThisLevel = 0;
 		levelNum = 0;		
 		bearsGotPast = 0;
@@ -87,9 +89,15 @@ public static class GameInfo {
 		totalBearsGotPast = 0;
 	}
 
+	private static int bearAccumulator = 0;
+
 	public static void IncBearsKilled() {
 		++numBearsKilledThisLevel;
-		++bearPoints;
+		++bearAccumulator;
+		if(bearAccumulator == 5){
+			bearAccumulator = 0;
+			++bearPoints;
+		}
 		totalBearsKilled++;
 		CheckIfGameIsOver();		
 	}
@@ -97,7 +105,7 @@ public static class GameInfo {
 	public static void IncBearGotPast() {
 		bearsGotPast++;
 		totalBearsGotPast++;
-		if (bearsGotPast > 6) {
+		if (bearsGotPast > 10) {
 			SceneManager.LoadScene("Game Over");
 		}
 		CheckIfGameIsOver();
@@ -118,19 +126,19 @@ public static class GameInfo {
 
 	private static float chargeModifier = 1;
 	private static float walkSpeedModifier = 1;
-	private static float chargeModifierIncrement = 0.95f;
-	private static float walkModifierIncrement = 1.05f;
+	private static float chargeModifierIncrement = 0.02f;
+	private static float walkModifierIncrement = 0.02f;
 
 	public static void UpgradeCharge(){
 		if(bearPoints > 0){
-			chargeModifier *= chargeModifierIncrement;
+			chargeModifier -= chargeModifierIncrement;
 			--bearPoints;
 		}
 	}
 
 	public static void UpgradeWalkSpeed() {
 		if(bearPoints > 0){
-			walkSpeedModifier *= walkModifierIncrement;
+			walkSpeedModifier += walkModifierIncrement;
 			--bearPoints;
 		}
 	}

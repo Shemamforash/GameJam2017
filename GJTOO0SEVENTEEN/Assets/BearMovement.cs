@@ -36,15 +36,15 @@ public class BearMovement : MonoBehaviour
                 break;
             case 1:
                 sr.color = Color.white;
-                bearSpeed = 1.5f;
+                bearSpeed = 2f;
                 break;
             case 2:
                 sr.color = new Color(1f, 0.3f, 0f);
-                bearSpeed = 1f;
+                bearSpeed = 1.25f;
                 break;
             case 3:
                 sr.color = Color.red;
-                bearSpeed = 0.5f;
+                bearSpeed = 0.75f;
                 break;
             default:
                 Debug.Log("Bear has incorrect health" + health);

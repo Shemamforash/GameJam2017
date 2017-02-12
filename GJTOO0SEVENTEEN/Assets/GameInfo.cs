@@ -104,11 +104,13 @@ public static class GameInfo {
 
 	public static void IncBearGotPast() {
 		bearsGotPast++;
+		Debug.Log(bearsGotPast);
 		totalBearsGotPast++;
-		if (bearsGotPast > 10) {
+		if (bearsGotPast >= 10) {
 			SceneManager.LoadScene("Game Over");
+		} else {
+			CheckIfGameIsOver("past");			
 		}
-		CheckIfGameIsOver("past");
 	}
 
 	public static int GetBearsKilledThisLevel(){

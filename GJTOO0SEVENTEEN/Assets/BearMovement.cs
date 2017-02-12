@@ -125,7 +125,6 @@ public class BearMovement : MonoBehaviour
         {
             // the bear has gotten past the goat!
             bearGotPastGoat = true;
-            print("Bear got past!!");
             GameInfo.IncBearGotPast();
             GameObject.Destroy(gameObject);
         }

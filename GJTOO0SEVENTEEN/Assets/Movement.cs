@@ -57,8 +57,10 @@ public class Movement : MonoBehaviour {
 
 	    	goatState = (int)GoatMoveState.returning;
 			BearMovement bm = obj.GetComponent<BearMovement>();
-			if(bm.BearHasBeenHit()){
-				gameObject.GetComponent<AudioSource>().Play();
+			if (bm != null) {
+				if(bm.BearHasBeenHit()){
+					gameObject.GetComponent<AudioSource>().Play();
+				}				
 			}
     	}
     }

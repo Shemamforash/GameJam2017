@@ -68,20 +68,9 @@ public class BearMovement : MonoBehaviour
 
         // const float rangeOfSpeed = 2f;
         // bearSpeed = 2f + Random.value * rangeOfSpeed;
-		SetColor();
+        SetColor();
     }
 
-    void HandleDamage()
-    {
-        --health;
-        SetColor();
-        if (health == 0)
-        {
-            GameObject.Instantiate(poofObject, transform.position, transform.rotation);
-            GameInfo.IncBearsKilled();          
-            GameObject.Destroy(gameObject);
-        }
-    }
 
     void Update()
     {
@@ -142,12 +131,23 @@ public class BearMovement : MonoBehaviour
         }
     }
 
-	public void BearHasBeenHit() {
-		if (health != 0) {
-            HandleDamage();			
-			bearHasBeenHit = true;
-		}
-	}
+    public bool BearHasBeenHit()
+    {
+        if (health != 0)
+        {
+            --health;
+            SetColor();
+            bearHasBeenHit = true;
+        }
+        if (health == 0)
+        {
+            GameObject.Instantiate(poofObject, transform.position, transform.rotation);
+            GameInfo.IncBearsKilled();
+            GameObject.Destroy(gameObject);
+            return true;
+        }
+        return false;
+    }
 
     // void HandleCollisionWithGoat() {
     // BearHasBeenHit();

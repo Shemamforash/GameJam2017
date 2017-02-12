@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour {
 	void Start () {
 		goatWalkSpeed = goatSpeed * GameInfo.GetWalkSpeedModifier();
 		goatMaxBashPowerAmountInSeconds *= GameInfo.GetChargeModifier();
-		goatInitialXWorld = GameInfo.MetresToWorldX(GamInfo.goatInitialXMetres);
+		goatInitialXWorld = GameInfo.MetresToWorldX(GameInfo.goatInitialXMetres);
 		rb = gameObject.GetComponent<Rigidbody2D>();
 		transform.localPosition = new Vector3(goatInitialXWorld, 0, 0);
 	}
